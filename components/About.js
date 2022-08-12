@@ -2,10 +2,7 @@ import Link from 'next/link';
 
 export const About = () => {
 	return (
-		<section
-			id='about'
-			className='bg-slate-100 px-4 py-14 md:py-36 mx-auto max-w-lg md:max-w-full lg:w-screen-xl md:px-24 lg:px-8'
-		>
+		<section id='about' className='bg-slate-100'>
 			<div className='grid gap-10 lg:grid-cols-2 w-5/6 mx-auto'>
 				<div className='flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg'>
 					<div className='max-w-xl mb-6'>
