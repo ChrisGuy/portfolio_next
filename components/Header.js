@@ -20,15 +20,24 @@ export const Header = () => {
 	];
 
 	return (
-		<header className='px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+		<div className='py-10 mx-auto max-w-lg w-5/6 md:max-w-full lg:w-scree-xl px-8 '>
 			<nav className='relative flex items-center justify-between'>
 				<Link href='/'>
 					<a
 						aria-label='Company'
 						title='Company'
-						className='inline-flex items-center uppercase text-purple-900 font-extralight text-2xl'
+						className='hidden md:block inline-flex items-center uppercase text-purple-900 font-extralight text-2xl'
 					>
 						Christopher Guy
+					</a>
+				</Link>
+				<Link href='/'>
+					<a
+						aria-label='Company'
+						title='Company'
+						className='md:hidden inline-flex items-center uppercase text-purple-900 font-extralight text-2xl'
+					>
+						CG
 					</a>
 				</Link>
 				<ul className='flex items-center hidden space-x-8 lg:flex'>
@@ -149,6 +158,6 @@ export const Header = () => {
 					)}
 				</div>
 			</nav>
-		</header>
+		</div>
 	);
 };
