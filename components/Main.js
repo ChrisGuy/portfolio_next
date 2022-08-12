@@ -5,12 +5,15 @@ import dp from '../public/profile_c.png';
 
 export const Main = () => {
 	return (
-		<div className='mx-auto max-w-xl h-auto max-h-screen md:max-w-full lg:max-w-screen-xl py-14 md:py-36 md:px-24 lg:px-8 lg:h-4xl flex flex-col justify-center'>
+		<div className='hero mx-auto max-w-xl h-auto max-h-screen md:max-w-full lg:max-w-screen-xl py-14 md:py-36 md:px-24 lg:px-8 lg:h-4xl flex flex-col justify-center'>
 			<div className=' mx-auto  w-full p-0'>
 				<div className='flex flex-col mb-16 items-center justify-center sm:text-center mb-0 w-full'>
 					<Link href='/'>
-						<a className='mb-6 mx-auto flex justify-center'>
-							<div className='flex items-center justify-center w-36 h-36 rounded-full'>
+						<a className=' mb-6 mx-auto inline-flex justify-center'>
+							<div className='animate-ping absolute opacity-75 inline-flex items-start justify-start w-24 h-24 rounded-full'>
+								<Image src={dp} alt='Christopher Morgan' />
+							</div>
+							<div className='relative flex items-center justify-center w-36 h-36 rounded-full'>
 								<Image src={dp} alt='Christopher Morgan' />
 							</div>
 						</a>
