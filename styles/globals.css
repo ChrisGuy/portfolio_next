@@ -1,3 +1,16 @@
 @tailwind base;
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+}
+
 @tailwind components;
+
+@layer components {
+    section {
+        @apply h-screen flex flex-col items-center justify-center
+    }
+}
 @tailwind utilities;

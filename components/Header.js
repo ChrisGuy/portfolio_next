@@ -20,7 +20,7 @@ export const Header = () => {
 	];
 
 	return (
-		<div className='py-10 mx-auto max-w-lg w-5/6 md:max-w-full lg:w-scree-xl px-8 '>
+		<div className='py-10 mx-auto max-w-lg w-5/6 md:max-w-full lg:w-screen-xl '>
 			<nav className='relative flex items-center justify-between'>
 				<Link href='/'>
 					<a
@@ -44,7 +44,7 @@ export const Header = () => {
 					{navLinks.map((link, i) => {
 						return (
 							<li key={i}>
-								<Link href='/'>
+								<Link href={link.destination}>
 									<a
 										aria-label='Our product'
 										title='Our product'

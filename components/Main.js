@@ -5,7 +5,7 @@ import dp from '../public/profile_c.png';
 
 export const Main = () => {
 	return (
-		<div className='mx-auto max-w-xl h-auto h-max-screen md:max-w-full lg:max-w-screen-xl py-14 md:py-36 md:px-24 lg:px-8 lg:h-4xl flex flex-col justify-center'>
+		<div className='mx-auto max-w-xl h-auto max-h-screen md:max-w-full lg:max-w-screen-xl py-14 md:py-36 md:px-24 lg:px-8 lg:h-4xl flex flex-col justify-center'>
 			<div className=' mx-auto  w-full p-0'>
 				<div className='flex flex-col mb-16 items-center justify-center sm:text-center mb-0 w-full'>
 					<Link href='/'>
@@ -55,7 +55,7 @@ export const Main = () => {
 								title='About'
 								className='uppercase inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-700 hover:bg-purple-900 hover:scale-105 focus:shadow-outline focus:outline-none'
 							>
-								Find out more...
+								Find out more
 							</a>
 						</Link>
 					</div>
