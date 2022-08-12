@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { ProjectCard } from './ProjectCard';
 
 const mockProjects = [
@@ -36,7 +38,7 @@ const mockProjects = [
 export const Projects = () => {
 	return (
 		<section className=''>
-			<div className='grid gap-8 lg:grid-cols-3 max-w-sm mx-auto lg:max-w-full'>
+			<div className='grid gap-8 lg:grid-cols-3 max-w-sm mx-auto lg:max-w-full relative'>
 				{(mockProjects.length > 3
 					? mockProjects.slice(0, 3)
 					: mockProjects
@@ -53,6 +55,17 @@ export const Projects = () => {
 						/>
 					);
 				})}
+			</div>
+			<div className='text-right w-full py-5'>
+				<Link href='#'>
+					<a
+						aria-label='Projects'
+						title='more projects'
+						className='my-3 uppercase inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-700 hover:bg-purple-900 hover:scale-105 focus:shadow-outline focus:outline-none'
+					>
+						See More
+					</a>
+				</Link>
 			</div>
 		</section>
 	);

@@ -13,12 +13,18 @@ export const ProjectCard = ({ image, tags, title, excerpt, link, date }) => {
 			/>
 			<div className='p-5 border border-t-0'>
 				<p className='mb-3 text-xs font-semibold tracking-wide uppercase'>
-					<span className='text-gray-600'>{new Date(date).toDateString()}</span>
+					<span className='text-gray-600'>
+						{new Date(date).toLocaleDateString('en-GB', {
+							year: 'numeric',
+							month: 'long',
+							day: 'numeric',
+						})}
+					</span>
 				</p>
 				<Link href='/'>
 					<a
-						aria-label='Category'
-						title='Visit the East'
+						aria-label='Title'
+						title={title}
 						className='inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700'
 					>
 						{title}
